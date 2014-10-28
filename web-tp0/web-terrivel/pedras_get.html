@@ -1,0 +1,59 @@
+﻿<html>
+	<head>
+		<title>Pedras</title>
+	</head>
+	
+	<body>
+	
+		<form action="terrivel-get.png" method="POST">
+			<table>
+			<tr>
+			<td>
+			<label for="num_pedras">Número de pedras:</label></td>
+			<td><input name="num_pedras" id="num_pedras" pattern="\d+" required></td> </tr>
+			<tr>
+			<td><label for="tam_pedra">Tamanho da pedra:</label></td>
+			<td><select name="tam_pedra" id="tam_pedra">
+				<option value="1">1</option>
+				<option value="1,5">1,5</option>
+				<option value="2">2</option>
+				<option value="2,5">2,5</option>
+				<option value="3" selected>3</option>
+				<option value="3,5">3,5</option>
+				<option value="4">4</option>
+				<option value="4,5">4,5</option>
+				<option value="5">5</option>
+				<option value="5,5">5,5</option>
+				<option value="6">6</option>
+				<option value="6,5">6,5</option>
+				<option value="7">7</option>
+			</select> </td></tr>
+			<tr>
+			<td><label for="nome">Nome:</label></td>
+			<td><input name="nome" id="nome" pattern="[a-zA-Z]+" required></td> </tr>
+			<tr>
+			<td><label for="corceu1">Cor do céu 1:</label></td>
+			<td><input type="color"> </td></tr>
+			<tr>
+			<td><label for="corceu2">Cor do céu 2:</label></td>
+			<td>
+			<input type="color"></td> </tr>
+			<tr>
+			<td><label for="tipo_pedras">Tipo das pedras:</label></td>
+			<td><select name="tipo_pedras" id="tipo_pedras">
+				<option value="marroada" selected>marroada</option>
+				<option value="ametista">ametista</option>
+				<option value="topazio">topazio</option>
+				<option value="espinela">espinela</option>		
+			</select></td> </tr>
+			<tr>
+			<td><label for="tipo_pedras_sortidas">Pedras sortidas:</label></td>
+			<td><input name="tipo_pedras_sortidas" id="tipo_pedras_sortidas" type="checkbox" value="sim"> </td></tr>
+			<tr>
+			<td><input type="submit" value="Dar pedras"></td>
+			</tr>
+			</table>
+		</form>
+	
+	</body>
+</html>
