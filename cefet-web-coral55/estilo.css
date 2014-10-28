@@ -1,0 +1,126 @@
+@import "fonts/stylesheet.css";
+
+body{
+	width: 800px;
+	position: absolute;
+	left: 50%; margin-left: -400px;
+	border-style: solid;
+	border-color: #d3d3d3;
+	border-width: 1px;
+}
+
+img.siri{
+	position: absolute;
+	left: -10px;
+	top: 17px;
+}
+
+#recipiente{
+	background-image: linear-gradient( to bottom, #f6f1b2, #4599b2 );
+}
+
+
+#cabecalho *{
+	margin: 0;
+	padding: 0;
+}
+
+#cardapio{
+	margin-left: 154px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #aac0ae;
+	width: 644px;
+	color: #333;
+	font-size: 14px;
+	font-family: verdana;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#cardapio p{
+	margin-left: 20px;
+}
+
+#cabecalho{
+	margin-bottom: 8px;
+}
+
+#cabecalho h1{
+	margin-left: 210px;
+	font-size: 36px;
+	color: #e90c0c;
+	font-family: ravie;
+}
+
+#cabecalho h2{
+	font-size: 24px;
+	color: #333;
+	margin-left: 350px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#cardapio h3{
+	font-size: 18px;
+	font-style: bold;
+	margin-left: 20px;
+
+}
+
+#roxo{
+	color: #d027aa;
+}
+
+span.direito{
+	float: right;
+	margin-right: 20px;
+}
+
+span.esquerdo{
+	margin-left: 20px;
+}
+
+#rodape{
+	text-align: right;
+	margin-right: 15px;
+	margin-top: 46px;
+	margin-bottom: 25px;
+}
+
+
+#lateral h2{
+	font-family: verdana;
+	font-size: 48px;
+	color: #333;
+	font-style: bold;
+	transform: rotate(270deg);
+	text-align: left;
+}
+
+img.bolha{
+	float: right;
+	margin-right: 20px;
+}
+
+img.peixe{
+	margin-left: -44px;
+	margin-top: 14px;
+	}
+
+#ticket img{
+	position:fixed;
+	top: 295px;
+	clip: rect(0px, 158px, 84px, 69px);
+	margin-left: -168px;
+}
+
+#ticket img:hover{
+	position:fixed;
+	top: 295px;
+	margin-left: -168px;
+	clip: rect(0px, 158px, 84px, 0px);
+}
+
+#lateral{
+	float: left;
+	width: 154px;
+}
