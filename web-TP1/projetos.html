@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Site Pessoal</title>
+		<link rel="stylesheet" href="estilo.css">
+		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+		<script>
+			var aparece = 0;
+			function sumir(){
+				if(aparece === 1){
+					document.getElementById("imagem").style.display = "none";
+					aparece = 0;
+				}
+			}
+		
+			function planta(){
+				imagem.innerHTML = '<img src="planta.jpg">';
+				document.getElementById("imagem").style.left = "50%";
+				document.getElementById("imagem").style.marginLeft = "-150px";
+				document.getElementById("imagem").style.top = "50%";
+				document.getElementById("imagem").style.marginTop = "-157px";
+				document.getElementById("imagem").style.display = "block";
+				aparece = 1;
+			}
+			
+			function pony(){
+				imagem.innerHTML = '<img src="pony.png">';
+				document.getElementById("imagem").style.left = "50%";
+				document.getElementById("imagem").style.marginLeft = "-150px";
+				document.getElementById("imagem").style.top = "50%";
+				document.getElementById("imagem").style.marginTop = "-150px";
+				document.getElementById("imagem").style.display = "block";
+				aparece = 1;
+			}
+			
+			function monstro(){
+				imagem.innerHTML = '<img src="monstro.png">';
+				document.getElementById("imagem").style.left = "50%";
+				document.getElementById("imagem").style.marginLeft = "-80px";
+				document.getElementById("imagem").style.top = "50%";
+				document.getElementById("imagem").style.marginTop = "-97px";
+				document.getElementById("imagem").style.display = "block";
+				aparece = 1;
+			}
+			
+			function tabela(){
+				imagem.innerHTML = '<img src="tabela.png">';
+				document.getElementById("imagem").style.left = "50%";
+				document.getElementById("imagem").style.marginLeft = "-201px";
+				document.getElementById("imagem").style.top = "50%";
+				document.getElementById("imagem").style.marginTop = "-105px";
+				document.getElementById("imagem").style.display = "block";
+				aparece = 1;
+			}
+			
+			function siri(){
+				imagem.innerHTML = '<img src="siri.png">';
+				document.getElementById("imagem").style.left = "50%";
+				document.getElementById("imagem").style.marginLeft = "-71px";
+				document.getElementById("imagem").style.top = "50%";
+				document.getElementById("imagem").style.marginTop = "-66px";
+				document.getElementById("imagem").style.display = "block";
+				aparece = 1;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="logotipo">
+			<h1 class="nome">Fernando Garcia</h1>
+		</div>
+		<div id ="menu">
+			<ul>
+				<li><a href="inicial.html">Início</a></li>
+				<li><a href="projetos.html" class="desabilitado">Projetos</a></li>
+				<li><a href="curriculo.html">Curriculum Vitae</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+		<div id="imagem" onclick="sumir()">
+		</div>
+		<div id="conteudo">
+			<ul class="projetos">
+				<li>
+					<h3>Plantas Carnívoras</h3>
+					<p>Neste projeto, implementei um site sobre plantas carnívoras.</p>
+					<img src="planta.jpg" onclick="planta()">
+				</li>
+				<li>
+					<h3>Unicórnio</h3>
+					<p>Neste projeto, criei uma página para expor a verdade sobre unicórnios.</p>
+					<img src="pony.png" onclick="pony()">
+				</li>
+				<li>
+					<h3>Monstro Verde</h3>
+					<p>Projeto tinha como objetivo alimentar com pedras o Incrível Monstro Verde que 
+					Come Pedras e Mora Debaixo da Terra.</p>
+					<img src="monstro.png" onclick="monstro()">
+				</li>
+				<li>
+					<h3>Tabela</h3>
+					<p>Estilizar uma tabela utilizando apenas folhas de estilo.</p>
+					<img src="tabela.png" onclick="tabela()">
+				</li>
+				<li>
+					<h3>Lanchonete</h3>
+					<p>Criar página para a Lanchonete do Coral 55.</p>
+					<img src="siri.png" onclick="siri()">
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

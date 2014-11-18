@@ -1,0 +1,97 @@
+
+
+#menu{
+	float:left;
+}
+
+#logotipo{
+	text-align: center;
+	margin-bottom: 40px;
+	background-image: url('livro.gif');
+	height: 85px;
+}
+
+li img{
+	width: 100px;
+}
+
+ul.projetos li{
+	margin-bottom: 80px;
+}
+
+#logotipo h1{
+	font-family: 'Coming Soon', cursive;
+	font-size: 48px;
+	color: blue;
+}
+
+table{
+	margin-bottom: 40px;
+}
+
+a.desabilitado{
+	color: black;
+	text-decoration: none;
+}
+
+q{
+	font-style: italic;
+}
+
+span.autor{
+	float: right;
+}
+
+td.nota{
+	text-align:right;
+}
+
+th{
+	text-align: left;
+}
+
+table.curriculo{
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+
+}
+
+#conteudo{
+	margin-bottom: 30px;
+}
+
+tr.branco{
+	background-color: #9999EE;
+}
+
+table.curriculo td, th, tr{
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+
+#conteudo ul, p{
+	margin-bottom: 40px;
+}
+
+#imagem{
+	position:fixed;
+
+}
+
+#conteudo{
+	margin-left: 300px;
+}
+
+body{
+    width: 100%;
+	height: 100%;
+	clear: left;
+	background: linear-gradient(to bottom, #ffffff, #333388);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	min-height: 768px;
+}

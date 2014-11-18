@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Site Pessoal</title>
+		<link rel="stylesheet" href="estilo.css">
+		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+		
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Gráfico'
+        },
+        subtitle: {
+            text: 'Conhecimento nas Matérias'
+        },
+        xAxis: {
+            categories: [
+                'Programação',
+                'Cálculo',
+                'Engenharia de Software',
+                'Redes de Computadores',
+                'Robótica',
+                'Controle e Automação',
+                'Inteligência Artificial',
+                'Sistemas Operacionais',
+                'Arquitetura de Computadores',
+                'Banco de Dados',
+                'Inglês'
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Conhecimento (0 a 10)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [   {
+            name: 'Conhecimento',
+            data: [5, 5, 4, 5, 4, 5, 4, 4, 3, 4, 5]
+
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+		
+
+
+		<div id="logotipo">
+			<h1 class="nome">Fernando Garcia</h1>
+		</div>
+		<div id ="menu">
+			<ul>
+				<li><a href="inicial.html">Início</a></li>
+				<li><a href="projetos.html">Projetos</a></li>
+				<li><a href="curriculo.html" class="desabilitado">Curriculum Vitae</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+		<div id="conteudo">
+			<table class="curriculo">
+				<tr class="branco">
+					<th>Área</th><th>Conhecimento (0 a 10)</th>
+				</tr>
+				<tr>
+					<td>Programação</td><td class="nota">5</td>
+				</tr>
+				<tr>	
+					<td>Cálculo</td><td class="nota">5</td>
+				</tr>
+				<tr>	
+					<td>Engenharia de Software</td><td class="nota">4</td>
+				</tr>
+				<tr>	
+					<td>Redes de Computadores</td><td class="nota">5</td>
+				</tr>
+				<tr>	
+					<td>Robótica</td><td class="nota">4</td>
+				</tr>
+				<tr>	
+					<td>Controle e automação</td><td class="nota">5</td>
+				</tr>
+				<tr>	
+					<td>Inteligência Artificial</td><td class="nota">4</td>
+				</tr>
+				<tr>	
+					<td>Sistemas Operacionais</td><td class="nota">4</td>
+				</tr>
+				<tr>	
+					<td>Arquitetura de Computadores</td><td class="nota">3</td>
+				</tr>
+				<tr>	
+					<td>Banco de Dados</td><td class="nota">4</td>
+				</tr>
+				<tr>	
+					<td>Inglês</td><td class="nota">5</td>
+				</tr>
+			</table>
+			<a href="curriculo.jpg" download>Curriculum Vitae</a>
+		</div>
+		<script src="js/highcharts.js"></script>
+		<script src="js/modules/exporting.js"></script>
+		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	</body>
+</html>
