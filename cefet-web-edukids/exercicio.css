@@ -1,0 +1,95 @@
+/* Exercício 1: Criar uma transição para quando o mouse estiver em cima dos
+ * botões play/stop (para que o elemento se revele lentamente)
+ */
+
+/*
+ * Exercício 2: Criar uma imagem sprite com as imagens de todos os 9 animais e,
+ * assim, fazer com que a página carregue mais rápido.
+ *
+ * Dica: você vai precisar alterar o caminho da imagem (para apontar para a
+ * sprite). O código html das imagens dos animais é gerado dinamicamente por
+ * jogo.js. Mais especificamente, procure pela função preencheAnimaisNaTela().
+ */
+.animal { 
+	overflow: hidden; position: relative;
+	width: 270px; height: 270px;
+}
+.animal img {
+	position: absolute;
+	left: 24px; top: 24px;
+}
+#peixe img { }
+#leao img { }
+#gato img { }
+#cachorro img { }
+#girafa img { }
+#rato img { }
+#hipopotamo img { }
+#coelho img { }
+#urso img { }
+
+/*
+ * Exercício 3: Você deve implementar uma metáfora visual para cada um dos 4
+ * estados dos animais. Algumas sugestões:
+ *   - agitado: animal piscando (opacidade variando)
+ *   - alimentado: uma borda verde no animal e o animal fica girando de alegria
+ *   - perturbado: animal fica pulsando
+ *   - instinto-selvagem: animal dá um salto e cresce, com uma borda vermelha
+ */
+.agitado { }
+
+.agitado img {
+	animation: piscando .5s ease-in-out 0 infinite alternate;
+	-webkit-animation: piscando .5s ease-in-out 0 infinite alternate;
+}
+
+
+
+
+@keyframes piscando {
+  from { opacity: 1.0; }
+  to  { opacity: 0.5; }
+}
+@-webkit-keyframes girando {
+  from { transform: rotate(0deg); }
+  to  { transform: rotate(359deg); }
+}
+
+@-webkit-keyframes piscando {
+  from { opacity: 1.0; }
+  to  { opacity: 0.5; }
+}
+
+@keyframes girando {
+  from { transform: rotate(0deg); }
+  to  { transform: rotate(359deg); }
+}
+
+@-webkit-keyframes pulsando {
+  from { transform: scale(1); }
+  to  { transform: scale(1.2); }
+}
+
+@keyframes pulsando {
+  from { transform: scale(1); }
+  to  { transform: scale(1.2); }
+}
+
+.alimentado { }
+.alimentado img { 
+	border: 1px solid green;
+	-webkit-animation: girando .5s ease-in-out 0 infinite;
+	animation: girando .5s ease-in-out 0 infinite;
+}
+
+.perturbado { }
+.perturbado img { 
+	-webkit-animation: pulsando .5s ease-in-out 0 infinite alternate;
+	animation: pulsando .5s ease-in-out 0 infinite alternate;
+}
+
+.instinto-selvagem { }
+.instinto-selvagem img { 
+	border: 1px solid red;
+	transform: scale(1.2);
+}
